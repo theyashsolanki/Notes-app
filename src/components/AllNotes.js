@@ -10,7 +10,7 @@ export default function AllNotes({ notes,  toggleNote }) {
       <div className='flex flex-wrap gap-2'>
         {
           notes.map( (note) => 
-            <Note key={note.id} note={note} toggle ={toggleNote}/>
+            <Note key={note.id} noteHead={note.noteHead} note={note} toggle ={toggleNote}/>
           )
         }
       </div>
